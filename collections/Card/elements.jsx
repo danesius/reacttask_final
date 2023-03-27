@@ -1,39 +1,54 @@
 import styled from "styled-components";
-import { mobile } from "../../responsive";
+
 
 export const Container = styled(({ ...props }) => <div {...props} />)`
-  display: flex;
-  align-items: center;
-  width: 100%;
+display: flex;
+background: rgba(244, 244, 244, 255);
+border-radius: 15px;
+border: 2px solid transparent;
+padding:1rem;
+:hover {
+border: 2px solid #1e7efb;
 
-  }
-
-  ${mobile({ justifyContent: "center" })}
+h3 {
+  color: #1e7efb;
+  text-decoration: underline;
+}
+cursor: pointer;
+}
 `;
 
 export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
-  border-radius: 10px;
-  flex: 1;
+display: flex;
+justify-content: center;
+align-self: center;
+width:12rem;
+
 `;
 
 export const TextContainer = styled(({ ...props }) => <div {...props} />)`
-  flex: 4;
+display: flex;
+flex-direction: column;
+color: black;
+font-family: sans-serif;
+
+
 `;
 
 export const Title = styled(({ ...props }) => <h3 {...props} />)`
   font-family: Poppins;
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  
   font-weight: bold;
-  border-bottom: ${(props) =>
-        props.underline === "true" && "2px solid #92dbea"};
-  width: 55px;
+ 
+ margin:0;
+
 `;
 
 export const Text = styled((props) => <p {...props} />)`
   font-family: Poppins;
   font-size: 1rem;
-  line-height: 1.5rem;
+ 
   font-weight: 400;
   color: black;
 `;

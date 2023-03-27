@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "../../collections/Card/Card"
+
 
 import {
   Container,
@@ -8,13 +8,17 @@ import {
   ImageContainer,
   CardContainer,
   Subheading,
+  Header,
+  StyledCard
 } from "./elements";
 
 export const Main = ({ image, data, ...props }) => {
   return (
     <Container {...props}>
-      <Heading>Manage agency selection</Heading>
-      <Subheading>Stregthen your onboarding process</Subheading>
+      <Header>
+        <Heading>Manage agency selection</Heading>
+        <Subheading>Stregthen your onboarding process</Subheading>
+      </Header>
       <InfoContainer>
         <ImageContainer>
           <Image
@@ -26,12 +30,12 @@ export const Main = ({ image, data, ...props }) => {
         </ImageContainer>
         <CardContainer>
           {data.map((d) => (
-            <Card
+            <StyledCard
               key={d.id}
               image={d.image}
               title={d.title}
-              description={d.description}
-              underline={d.underline}
+              text={d.text}
+
             />
           ))}
         </CardContainer>

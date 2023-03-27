@@ -7,29 +7,28 @@ const heroProps = {
   ctaText: "Start",
 };
 const MainProps = {
-  image: { src: "/img/video.png", alt: "", width: 400, height: 500 },
+  image: { src: "/img/video.png", alt: "", width: 1000, height: 1680 },
   data: [
     {
       id: 1,
-      image: { src: "/img/next1.png", alt: "", width: 150, height: 150 },
+      image: { src: "/img/icon1.png", alt: "", width: 50, height: 50 },
       title: "Brief",
       text:
         "Complete brief writing or simple guidance on what to include, we've got you covered",
     },
     {
       id: 2,
-      image: { src: "/img/next2.png", alt: "", width: 150, height: 150 },
+      image: { src: "/img/icon2.png", alt: "", width: 50, height: 50 },
       title: "Search",
       text:
         "In depth agency search covering; criteria matching, door knocking and due-dilligence vetting",
     },
     {
       id: 3,
-      image: { src: "/img/next3.png", alt: "", width: 150, height: 150 },
+      image: { src: "/img/icon3.png", alt: "", width: 50, height: 50 },
       title: "Pitch",
       text:
         "Comprehensive pitch management including comms, diary managment and pitch hosting",
-      underline: "true",
     },
   ],
 };
