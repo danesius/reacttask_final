@@ -7,6 +7,7 @@ background: rgba(244, 244, 244, 255);
 border-radius: 15px;
 border: 2px solid transparent;
 padding:1rem;
+max-width:45rem;
 :hover {
 border: 2px solid #1e7efb;
 
